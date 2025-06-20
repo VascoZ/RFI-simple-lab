@@ -7,10 +7,10 @@ services:
     volumes:
       - ./vuln-app:/var/www/html
     depends_on:
-      - Evil-host
+      - evil-host
 
   evil-host:
-    build: ./Evil-host
+    build: ./evil-host
     ports:
       - "9090:80"
     volumes:
