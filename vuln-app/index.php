@@ -5,6 +5,6 @@ if (isset($_GET['page'])) {
 } else {
     echo "Welcome to RFI Challenge! Try to include something via ?page=";
 }
-// Flag: RFI{you_included_a_remote_file}
+// Flag: RFI{you_included_a_remote_file} ,
 
 ?>
