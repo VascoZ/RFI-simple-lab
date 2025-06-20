@@ -1,0 +1,17 @@
+version: '3'
+services:
+  vuln-app:
+    build: ./vuln-app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./vuln-app:/var/www/html
+    depends_on:
+      - evil-host
+
+  evil-host:
+    build: ./evil-host
+    ports:
+      - "9090:80"
+    volumes:
+      - ./evil-host:/var/www/html
